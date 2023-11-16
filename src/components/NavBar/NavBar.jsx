@@ -8,7 +8,7 @@ const NavBar = () => {
     };
     return (
         <nav className='flex justify-between px-[150px] py-[47px]'>
-            <Link to={"/"} className='hover:text-[#ffc107] font-bold text-xl'>Tasty HUT</Link>
+            <Link to={"/mealdb-react/"} className='hover:text-[#ffc107] font-bold text-xl'>Tasty HUT</Link>
             <button onClick={signUpButtonHandler} className='bg-[#ffc107] hover:bg-yellow-500 font-bold text-xl px-[41px] py-[17px] rounded-lg'>Sign Up</button>
         </nav>
     );

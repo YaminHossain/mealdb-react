@@ -6,13 +6,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./components/Root/Root";
 import Home from "./components/Home/Home";
 import SignUp from "./components/SignUp/SignUp";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 const router = createBrowserRouter([
   {
     path: "/",
     element:<Root></Root>,
     children :[
       {
-        path:"/",
+        path:"/mealdb-react/",
         element:<Home></Home>
       },
       {
@@ -21,7 +22,13 @@ const router = createBrowserRouter([
       }
     ]
   },
-]);
+  {
+    path:"*",
+    element:<ErrorPage></ErrorPage>
+  }
+  ]);
+ 
+ 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
